@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-.root {
+:root {
     --base-color: white;
     --secondary-color: #f5f6f7;
     --login-form-text: black;
@@ -20,30 +20,31 @@ html {
 }
 
 .inner-box {
-   
+    
+    
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); */
     overflow: hidden;
+    
     display: grid;
-    grid-template-columns: max(40%, 280px) minmax(60%, 300px);
+    grid-template-columns:  clamp(260px, 40vw, 420px) 1fr;
+    grid-template-rows: 95vh;
+    
     
     
 }
 
 .outter-box {
     background-color: var(--secondary-color);
-    padding: 2vh;
-    
-    
+    padding: 15px;
     
 }
 
 .left-col {
     
     background: linear-gradient(to bottom right, #2695f0, #2378cc);
-    height: 100vh;
-    overflow: hidden;
-    padding: 1.5vw;
+    padding: 15px;
     display: flex;
     align-items: center;
 
@@ -54,11 +55,10 @@ html {
 
 .right-col {
 
-    
-    
-    
-    background-color: white;
+    padding: 15px;
+    background-color: var(--base-color);
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     
@@ -66,34 +66,47 @@ html {
     
 
 }
-#login-info{ 
-    p{
-        color: white;
-        font-size: 1.2rem;
-    
-
+#login-info { 
+    p {
+        color: var(--login-info-text);
+        font-size: 1rem;
     }
-    
-   color: white;
-}
-
-#login-form{ 
-    
-    
-   
-
-}
-
-
-
-h1{
-    color: white;
+    h1{
+    color: var(--login-info-text);
     font-size: 3.3rem;
      
 }
-form-field {
-    display: block;
+  
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#login-form input {
+    display: flex;
+   
+    width: min(600px);
+    height: 40px;
+}
+
+#login-form label {
+    display: flex;
+   
+    color: red;
+    
+}
+
+#login-form password-recovery{
+   
+} 
+
+#login-form button {
+  
+}
+
 
 
 
