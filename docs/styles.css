@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+.root {
+    --base-color: white;
+    --secondary-color: #f5f6f7;
+    --login-form-text: black;
+    --login-info-text: white;
+    --login-info-light-blue: #2695f0;
+    --login-info-dark-blue: #2378cc;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Zalando Sans;
+}
 
 .inner-box {
    
@@ -5,15 +25,14 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     display: grid;
-    
-    grid-template-columns: minmax(40%, 1fr) minmax(60%, 2fr);
+    grid-template-columns: max(40%, 280px) minmax(60%, 300px);
     
     
 }
 
 .outter-box {
-    background-color: #f5f6f7;
-    padding: 3vh;
+    background-color: var(--secondary-color);
+    padding: 2vh;
     
     
     
@@ -21,11 +40,13 @@
 
 .left-col {
     
-    min-height: 80vh;
-    padding: 3vw;
+    background: linear-gradient(to bottom right, #2695f0, #2378cc);
+    height: 100vh;
+    overflow: hidden;
+    padding: 1.5vw;
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom right, #2695f0, #2378cc);
+
     
 
     
@@ -33,7 +54,9 @@
 
 .right-col {
 
-    padding: 3vw;
+    
+    
+    
     background-color: white;
     display: flex;
     align-items: center;
@@ -47,7 +70,7 @@
     p{
         color: white;
         font-size: 1.2rem;
-        font-family: sans-serif;
+    
 
     }
     
@@ -66,7 +89,7 @@
 h1{
     color: white;
     font-size: 3.3rem;
-     font-family: sans-serif;
+     
 }
 form-field {
     display: block;
