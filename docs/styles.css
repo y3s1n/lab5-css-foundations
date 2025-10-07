@@ -5,8 +5,8 @@
     --secondary-color: #f5f6f7;
     --login-form-text: black;
     --login-info-text: white;
-    --login-info-light-blue: #2695f0;
-    --login-info-dark-blue: #2378cc;
+    --login-info-light-blue: #3a9fe6;
+    --login-info-dark-blue: #2756a8;
 
 }
 
@@ -29,7 +29,7 @@ html {
     box-shadow: 0 10px 20px rgb(230, 225, 225);
     
     display: grid;
-    grid-template-columns:  clamp(250px, 28vw, 410px) 1fr;
+    grid-template-columns:  clamp(250px, 30vw, 410px) 1fr;
     grid-template-rows: 95vh;
     
     
@@ -44,7 +44,7 @@ html {
 
 .left-col {
     
-    background: linear-gradient(to bottom right, #5caaea, #1366b8);
+    background: linear-gradient(to bottom right, #64acf0, #1e5ecc);
     padding: 15px;
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ html {
 #login-info { 
     p {
         color: var(--login-info-text);
-        font-size: 1.02rem;
+        font-size: 1.1rem;
         line-height: 1.5;
     }
     
@@ -117,25 +117,41 @@ form {
     display: flex;
     color: var(--login-form-text);
     font-size: 1.04em;
-    font-weight: 500;
+    font-weight: 550;
     
     
 }
 
 #login-form password-recovery{
-    margin-top: 20px;
+    margin-top: 24px;
     float: right;
     white-space: nowrap;
+    a {
+        text-decoration: none;
+        color: var(--login-info-light-blue);
+        font-weight: 530;
+    }
    
 } 
+
 
 #login-form button {
     margin-top: 5px;
     border: none;
-    border-radius: 3px;
-    padding: 1.2em 2.2em;
-  
-  
+    border-radius: 5px;
+    height: 50px;
+    width: 105px;
+    font-weight: 550;
+    font-size: large; 
+    background-color: rgb(77, 107, 242);
+    color: var(--base-color);
+    transition: 150ms ease;
+
+}
+
+#login-form button:hover {
+    background-color:var(--login-info-dark-blue);
+
 }
 
 
