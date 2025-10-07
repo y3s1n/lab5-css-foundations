@@ -24,11 +24,12 @@ html {
     
     border-radius: 15px;
     box-sizing: border-box;
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); */
+    
     overflow: hidden;
+    box-shadow: 0 10px 20px rgb(211, 205, 205);
     
     display: grid;
-    grid-template-columns:  clamp(260px, 40vw, 420px) 1fr;
+    grid-template-columns:  clamp(250px, 28vw, 410px) 1fr;
     grid-template-rows: 95vh;
     
     
@@ -71,9 +72,11 @@ html {
         color: var(--login-info-text);
         font-size: 1rem;
     }
+    
     h1{
     color: var(--login-info-text);
-    font-size: 3.3rem;
+    font-size: 3.0rem;
+    
      
 }
   
@@ -90,6 +93,7 @@ form {
    
     width: min(600px);
     height: 40px;
+    
 }
 
 #login-form label {
@@ -100,10 +104,13 @@ form {
 }
 
 #login-form password-recovery{
+    float: right;
+    white-space: nowrap;
    
 } 
 
 #login-form button {
+    float: left;
   
 }
 
