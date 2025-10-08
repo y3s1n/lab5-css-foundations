@@ -29,7 +29,7 @@ html {
     box-shadow: 0 10px 20px rgb(230, 225, 225);
     
     display: grid;
-    grid-template-columns:  36vw  1fr;
+    grid-template-columns:  min(36vw, 45%)  1fr;
     overflow: auto;
     
 
