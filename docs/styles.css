@@ -21,18 +21,13 @@ html {
 
 .inner-box {
     
-    
     border-radius: 15px;
     box-sizing: border-box;
-    
     overflow: hidden;
     box-shadow: 0 10px 20px rgb(230, 225, 225);
-    
     display: grid;
     grid-template-columns:  min(36vw, 45%)  1fr;
     overflow: auto;
-    
-
     grid-template-rows: 94vh;
     
     
@@ -60,11 +55,9 @@ html {
     flex-shrink: 0;
     align-items: center;
     justify-content: flex-start;
-    
-    
-    
-
 }
+
+
 #login-info { 
     inline-size: min(36ch, 100%);
     padding: 25px;
@@ -97,7 +90,6 @@ form {
     padding: 1em;
     font-size: 1em;
     display: flex;
-    flex-grow: 1;
     width: min(650px);
     height: 60px;
     transition: 150ms ease;
