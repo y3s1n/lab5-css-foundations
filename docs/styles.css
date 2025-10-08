@@ -29,7 +29,7 @@ html {
     box-shadow: 0 10px 20px rgb(230, 225, 225);
     
     display: grid;
-    grid-template-columns:  clamp(250px, 36vw, 455px)  1fr;
+    grid-template-columns:  clamp(12vw, 36vw, 45vw)  1fr;
     grid-template-rows: 94vh;
     
     
