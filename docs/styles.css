@@ -47,7 +47,7 @@ html {
 
 .left-col {
 
-    /* min-width: 0; */
+   
     background: linear-gradient(to bottom right, #53a2ed, #1e75cc);
     display: flex;
     align-items: center;
@@ -56,7 +56,8 @@ html {
 
 .right-col {
     padding: 55px;
-    
+    min-width: 0;
+    overflow: auto;
     background-color: var(--base-color);
     display: flex;
     flex-shrink: 0;
@@ -69,7 +70,7 @@ html {
 }
 #login-info { 
     inline-size: min(36ch, 100%);
-    padding: 30px;
+    padding: 25px;
    
     p {
         color: var(--login-info-text);
