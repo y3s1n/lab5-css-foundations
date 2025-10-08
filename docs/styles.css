@@ -69,7 +69,7 @@ html {
 }
 #login-info { 
     inline-size: min(36ch, 100%);
-    padding: 20px;
+    /* padding: 20px; */
    
     p {
         color: var(--login-info-text);
