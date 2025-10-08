@@ -29,7 +29,7 @@ html {
     box-shadow: 0 10px 20px rgb(230, 225, 225);
     
     display: grid;
-    grid-template-columns:  36vw  1fr;
+    grid-template-columns:  min(36vw, 45%)  1fr;
     overflow: auto;
     min-width: 0;
 
@@ -57,8 +57,6 @@ html {
 }
 
 .right-col {
-    /* overflow: auto;  
-    min-width: 0; */
     padding: 55px;
     background-color: var(--base-color);
     display: flex;
@@ -72,7 +70,7 @@ html {
 }
 #login-info { 
     inline-size: min(36ch, 100%);
-    padding: 25px;
+    padding: 30px;
     p {
         color: var(--login-info-text);
         font-size: 1.2rem;
