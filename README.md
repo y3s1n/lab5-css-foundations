@@ -147,7 +147,7 @@ _left column on iphone is cropped_
 
 ##### Google
 
-![Google View](./GoogleView.png)
+![Google View](./googleView.png)
 
 ##### HTML Validator
 
