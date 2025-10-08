@@ -56,8 +56,8 @@ html {
 
 .right-col {
     padding: 55px;
-    min-width: 0;
-    overflow: auto;
+    /* min-width: 0;
+    overflow: auto; */
     background-color: var(--base-color);
     display: flex;
     flex-shrink: 0;
