@@ -47,7 +47,7 @@ html {
 
 .left-col {
 
-    min-width: 0;
+    min-width: 10;
     background: linear-gradient(to bottom right, #53a2ed, #1e75cc);
     display: flex;
     align-items: center;
@@ -69,7 +69,8 @@ html {
 }
 #login-info { 
     inline-size: min(36ch, 100%);
-    padding: 30px;
+    padding: 20px;
+   
     p {
         color: var(--login-info-text);
         font-size: 1.2rem;
