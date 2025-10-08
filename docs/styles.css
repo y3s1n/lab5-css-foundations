@@ -29,8 +29,8 @@ html {
     box-shadow: 0 10px 20px rgb(230, 225, 225);
     
     display: grid;
-    grid-template-columns:  clamp(250px, 30vw, 410px) 1fr;
-    grid-template-rows: 95vh;
+    grid-template-columns:  clamp(250px, 36vw, 455px)  1fr;
+    grid-template-rows: 94vh;
     
     
     
@@ -44,40 +44,42 @@ html {
 
 .left-col {
     
-    background: linear-gradient(to bottom right, #64acf0, #1e5ecc);
-    padding: 15px;
+    background: linear-gradient(to bottom right, #53a2ed, #1e75cc);
+    
     display: flex;
     align-items: center;
     
 }
 
 .right-col {
-
-    padding: 15px;
+    overflow: auto;  
+    min-width: 0;
+    padding: 55px;
     background-color: var(--base-color);
     display: flex;
     flex-shrink: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     
     
     
 
 }
 #login-info { 
+    inline-size: min(36ch, 100%);
+    padding: 25px;
     p {
         color: var(--login-info-text);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.5;
+        
     }
     
     h1{
     color: var(--login-info-text);
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    padding-right: 20px;
-    
-     
+   
 }
   
 }
@@ -95,8 +97,8 @@ form {
     font-size: 1em;
     display: flex;
     flex-grow: 1;
-    width: min(750px);
-    height: 55px;
+    width: min(650px);
+    height: 60px;
     transition: 150ms ease;
     border: 2px solid rgb(200, 200, 200);
 }
@@ -116,23 +118,33 @@ form {
     margin-bottom: 10px;
     display: flex;
     color: var(--login-form-text);
-    font-size: 1.04em;
+    font-size: 1.1em;
     font-weight: 550;
     
     
 }
 
 #login-form password-recovery{
-    margin-top: 24px;
+    margin-top: 20px;
     float: right;
-    white-space: nowrap;
+   background-color: var(--base-color);
     a {
         text-decoration: none;
         color: var(--login-info-light-blue);
         font-weight: 530;
     }
+    transition: 150ms ease;
+
+
+    
    
 } 
+
+#login-form password-recovery:hover {
+    background-color: #f4f4f4;
+    padding: 2px;
+    border-radius: 5px;
+}
 
 
 #login-form button {
